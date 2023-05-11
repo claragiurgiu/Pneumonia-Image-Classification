@@ -18,17 +18,27 @@ We transformed the images using ImageDataGenerator and then used a Sequential Ne
 ## Results
 
 ## 1. Sequential Neural Network
-This model to our accuracy from a meager 50% all the way to a 96% which is fantastic for training. Now how does it perform against testing data
-- input an image showing results
+This model was able to outperform the dummy model, improving the accuracy score from 50% to a 96%, and our recall score from 50% to 97%. These are our scores for the validation data.
+![Simple Sequential NN](./Graphs/Simple_SeqNN_val_results.png)
 
 ## 2. Enhance images - Sequential Neural Network
+This model took our accuracy score from 50% to a 84%, and our recall score from 50% to 95%. Noticeably worse than our simple Sequential Neural Network. These are our scores for the validation data.
+![Sequential NN w/Enhanced images](./images/Enhanced_SeqNN_val_results.png)
 
-## 3. Convoluted Neural Network
+
+## 3. Convoluted Neural Network with dropout and tuned Optimizer
+The final model was able to improve our accuracy from 50% to 97%, and our recall score from 50% to 97%. These are our scores for the validation data.
+
+This has been chosen to be our final model, because it is the least overfit and best performing in both accuracy and recall scores.
+
+![CNN w/dropout and tuned Optimizer](./images/Final_model_val_results.png)
 
 
 ## Conclusion
 
-In conclusion 96% accuracy, and __ % recall scores are a great standard to have for diagnosing. Of course this model is not meant to be a doctor, and should be used in conjunction with a medical professional. In business terms, this accuracy would greatly reduce costs for both patients and health providers.
+In conclusion our final model was able to perform 85% accuracy, and 97% recall scores for our test set. These are great standards to have for diagnosing, since the mission of our model is to minimize false positives. Of course this model is not meant to be a doctor, and should be used in conjunction with a medical professional. In business terms, this accuracy and recall would greatly reduce costs for both patients and health providers.
+
+![Dummy vs Final Test Results](./images/Dummy_vs_Final.png)
 
 According to [Khealth](https://www.khealth.com/learn/antibiotics/antibiotics-for-pneumonia/#:~:text=The%20first%2Dline%20treatment%20for%20pneumonia%20in%20adults%20is%20macrolide,bacterial%20pneumonia%20is%20typically%20amoxicillin) Azithromycin is a first-line treatment for adults under 65 with bacterial pneumonia. According to [Enhance Health](https://enhancehealth.com/how-much-do-antibiotics-cost-without-insurance/) this antibiotic has a generic price point of $31.30 and brand name, Zithromax, price point of $152.16. We'll use our baseline dummy model as an example of total savings.
 
@@ -37,10 +47,19 @@ In this model out of 4,184 observations, 514 people were diagnosed as false posi
 
 ## Next Steps
 
+Our next steps would consist of:
+
+-Further tuning the parameters in the convolutional neural network to get better results.
+
+-Iterating many times over the images to see how different augmentations affect the model results.
+
+-Expanding the demographic of patients to include 65 years olds and over as they are also very susceptible to pneumonia.
+
+-Gathering an abundance of more data/images in order to train and produce a better model.
 
 
 ## For more Information
-See the full analysis in the [Jupyter Notebook]
+See the full analysis in the [Jupyter Notebook](https://github.com/claragiurgiu/Pneumonia-Image-Classification/blob/main/Final_Notebook.ipynb)
 
 
 ## Repository Structure
