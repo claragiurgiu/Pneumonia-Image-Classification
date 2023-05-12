@@ -35,7 +35,7 @@ This model took our accuracy score from 49% to a 84%, and our recall score from 
 
 
 ## 3. Convolutional Neural Network with dropout and tuned Optimizer
-The final model was able to improve our accuracy from 49% to 97%, and our recall score from 50% to 97%. These are our scores for the validation data.
+The final model was able to improve our accuracy from 49% to 97%, and our recall score from 50% to 98%. These are our scores for the validation data.
 
 This has been chosen to be our final model, because it is the least overfit and best performing in both accuracy and recall scores.
 
