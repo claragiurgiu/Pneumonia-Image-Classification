@@ -83,6 +83,6 @@ or review this [Presentation]()
 ├── chest_xray
 ├── Final_Notebook.ipynb
 ├── LICENSE
-├── README.md 
 ├── Pneumonia Image Classification - Presentation.pdf
+├── README.md
 ```
